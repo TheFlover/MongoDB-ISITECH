@@ -14,8 +14,14 @@ db.Restaurants.find()
 //
 .pretty()
 
-## Questions cours
+## Questions cours :
 
-Est-il possible de stocker des documents dans la BDD ?
+- Pourquoi utiliser MongoDB dans ce projet ?
 
-Quelle est la différence entre la "clé primaire" de mongodb et du language sql
+- En quoi les fonctionnalités avancées de MongoDB peuvent-elles être un avantage ?
+
+- Est-il possible de stocker des documents dans la BDD ?
+
+- Quelle est la différence entre la "clé primaire" de mongodb et du language sql ?
+
+- Quel domaine se spécialise dans la gestion d'énormes quantités de données ? MongoDB fait-il parti des SGBDs adaptés ? Citez une alternative et présentez la brièvement.
