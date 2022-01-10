@@ -4,17 +4,17 @@ Nous avons décidé d'utiliser Atlas pour stocker la bdd et Compass pour gérer 
 
 ## Commandes de bases utiles :
 
-<br/>//Voir les bdds de mongoDB :<br/>
+<br/> - Voir les bdds de mongoDB :
 <br/>show dbs
-<br/>//Connexion a la bdd
+<br/> - Connexion a la bdd
 <br/>use Restaurants
-<br/>//Voir la base complète :
+<br/> - Voir la base complète :
 <br/>db.Restaurants.find()
-<br/>//Limiter le nombre de retour
+<br/> - Limiter le nombre de retour
 <br/>.limit()
-<br/>//Avoir différentes informations sur la requete dont le temps d'execution
+<br/> - Avoir différentes informations sur la requete dont le temps d'execution
 <br/>.explain()
-<br/>//Affiche le résultat bien formaté 
+<br/> - Affiche le résultat bien formaté 
 <br/>.pretty()
 
 ## Questions cours :
