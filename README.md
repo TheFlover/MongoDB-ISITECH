@@ -19,19 +19,25 @@ testées. Et toutes les questions posées devront être traitées.<br/>
 
 ## Introduction
 
+Pour ce projet, nous avons décidé de faire une application qui sera installé dans les bornes des restaurants.<br/>
+Elle permettra aux clients de se connecter grace à leur numéro de téléphone.<br/>
+Avec ce système nous pourrons demander des informations de plus en plus ciblés en fonction du nombre de venu des clients dans les restaurants.<br/>
+Chaque information ajouté leur créditera des points ainsi que chacune de leurs connections (Limité à une toute les 5h pour éviter les abus).<br/>
+Ces point de fidélité permettront aux clients de recevoir des promotions. <br/><br/>
+
+## MongoDB
+
+Nous avons décidé d'utiliser MongoDB pour ce projet car il correspond parfaitement à nos besoins.<br/>
+MongoDB associe simplicité d'utilisation lors du développement, facilité de mise a l'échelle lors de l'évolution de notre application et performance pour la gestion de BigData ce qui le rend parfait pour notre projet. (voir : https://docs.mongodb.com/manual/)<br/><br/>
+
 Nous avons décidé d'utiliser Atlas pour stocker la bdd et Compass pour gérer la base car nous sommes tout les trois sur Windows et que nous l'avons déjà utilisé.<br/>
 <br/>
 Pour la sécurité, nous avons mis en place une whitelist avec nos IPs pour sécuriser la connection à la base.<br/>
 Nous avons du créer un utilisateur par personne pour se connecter à la BDD car nous ne pouvions pas nous connecter a plusieurs en simultané avec le même user.<br/>
 
-## MongoDB
-
-Nous avons décidé d'utiliser MongoDB pour ce projet car il correspond parfaitement à nos besoins.<br/>
-MongoDB associe simplicité d'utilisation lors du développement, facilité de mise a l'échelle lors de l'évolution de notre application et performance pour la gestion de BigData ce qui le rend parfait pour notre projet. (voir : https://docs.mongodb.com/manual/)
-
 ### Mise en place de MongoDB
 
-Nous avons utilisé certaines commandes afin de nous connecter a la base et de la manipuler.<br/><br/>
+Nous avons utilisé certaines commandes afin de nous connecter a la base et de la manipuler.<br/>
 
 Voici une liste des commandes de base que nous avons utilisé :<br/>
 
@@ -53,7 +59,7 @@ db.Restaurants.find()
 Contrairement à SQL, MongoDB n'est pas un système relationnel. Cela veut dire que les données sont stoqués dans des documents et ne respecte pas les contraintes d'unicité des données.<br/>
 Une même donnée peut être stocké à de multiples reprises.<br/>
 Dans la Base SQL les Clé primaires et secondaires permettent de créer des liens entre les différentes tables et donc de s'assurer que les données sont uniques. (https://sql.sh/cours/create-table/primary-key)<br/>
-En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId("5197c6b453cce2ec3a743811")) mais elle ne sert pas à contruire des relations comme en SQL. Il permet d'identifier de manière unique les données. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)<br/>
+En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId("5197c6b453cce2ec3a743811")) mais elle ne sert pas à contruire des relations comme en SQL. Elle permet d'identifier de manière unique les données. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)<br/>
 
 ### BigData
 
