@@ -38,9 +38,19 @@ Enormément de domaines se sont spécialisés dans la gestion d'énormes quantit
 Les données sont des richesses qui servent dans tout les domaines et surtout en marqueting pour le ciblage des clients potentiels. <br/>
 Oui MongoDB fait parti des SGBD adaptés car il implémente un système de stockage considéré comme plus performant que le SQL pour l'analyse de données en masse. Ce qui le rend très intéréssant pour l'utilisation principale des BigData qui correspond à l'analyse des données.<br/>
 Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. <br/>
-Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également de s'occuper d'une quantité de taches virtuellement illimité. (https://www.lebigdata.fr/hadoop)
+Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également permet de s'occuper d'une quantité de taches virtuellement illimité. (https://www.lebigdata.fr/hadoop)
 
 # Projet
+
+Une chaine de restaurant souhaite récupérer des données clients afin de capitaliser
+sur un flux de personnes sans cesse grandissant 
+(plusieurs dizaine de milliers de clients par semaine dans toute la France).<br/>
+
+Fournissez un projet d'application centré sur un stockage des données avec Mongo DB. <br/>
+
+Le projet dans son ensemble ne sera pas forcément terminé cette semaine,
+en revanche toutes les interactions avec la base de données doivent être documentées et 
+testées. Et toutes les questions posées devront être traitées.<br/>
 
 ## Notes :
 
@@ -60,3 +70,23 @@ Nous n'avons pas de conversion de données a faire car MongoDB est une base de f
 - En quoi les fonctionnalités avancées de MongoDB peuvent-elles être un avantage ?
 
 - Qu'est-ce que l'aggrégation ? Expliquer MongoDB Chart.
+
+## Requêtes Géospaciales :
+
+- Quelle est l'utilité de telles requetes ? Discutez de la structure des données GeoJson
+
+- Illustrer avec un exemple (MongoDB Chart)
+
+- Comment ce type de données peut intervenir dans le projet ?
+
+- Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
+
+## Aggrégation :
+
+- Expliquer brièvement l'interêt de l'aggrégation
+
+- Prévoir une application dans notre projet
+
+- Tenter d'expliquer les traitements effectués à l'aide d'un schéma fonctionnel
+
+- 
