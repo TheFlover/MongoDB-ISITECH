@@ -42,7 +42,7 @@ Hadoop est une solution opensource faisant parti du projet Apache. Il offre un e
 
 # Projet
 
-Une chaine de restaurant souhaite récupérer des données clients afin de capitaliser
+Une chaine de restaurants souhaite récupérer des données clients afin de capitaliser
 sur un flux de personnes sans cesse grandissant 
 (plusieurs dizaine de milliers de clients par semaine dans toute la France).<br/>
 
@@ -76,19 +76,22 @@ Nous n'avons pas de conversion de données a faire car MongoDB est une base de f
 - Quelle est l'utilité de telles requetes ? Discutez de la structure des données GeoJson
 
 Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.<br/>
-La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/><br/>
+La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/>
 
 Structure :<br/>
 champ: { type: GeoJSON type , coordinates: coordonnées }
 
 - Illustrer avec un exemple (https://docs.mongodb.com/charts/)
 
-A l'aide de mongoDB Chart, nous pouvons par exemplecréer différents graphiques afin d'analyser nos données et de les visualiser.
+A l'aide de mongoDB Chart, nous pouvons par exemple créer différents graphiques afin d'analyser nos données et de les visualiser.<br/>
+Cela permet par la suite de faire différentes études par zone géographique par exemple.
+
 
 - Comment ce type de données peut intervenir dans le projet ? (https://docs.mongodb.com/charts/)
 
-Dans notre projet, cela pourra permettre d'analyser les magasins les plus utilisés par les clients en fonction de leur lieu de résidence.<br/>
-Cela peut concrètement permettre voir la distance parcouru que les clients font pour venir dans les restaurants.
+Cela va nous servir à savoir si un restaurant est manquant dans une zone géographique pour par la suite cibler les endroit où il faudrait ouvrir des restaurants.
+Nous pourrons également utiliser ces données afin de comparer les restaurants et comprendre pourquoi dans une même zone géographique un restaurant à beaucoup de clients par rapport aux autres.
+Cela permet également de faire des statistiques graphiques pour faire des bilans annuels et ainsi visualiser le développement de la société dans le temps.
 
 - Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
 
@@ -96,8 +99,16 @@ Cela peut concrètement permettre voir la distance parcouru que les clients font
 
 - Expliquer brièvement l'interêt de l'aggrégation
 
+L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.
+
 - Prévoir une application dans notre projet
 
+Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.<br/>
+Nous pourons alors faire des études en ciblant précisement des restaurants.<br/>
+Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.
+
 - Tenter d'expliquer les traitements effectués à l'aide d'un schéma fonctionnel
+
+
 
 - Requêtes natives :
