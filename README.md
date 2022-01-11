@@ -35,17 +35,17 @@ Nous avons utilisé certaines commandes afin de nous connecter a la base et de l
 
 Voici une liste des commandes de base que nous avons utilisé :<br/>
 
- - Voir les bdds de mongoDB
+ - Voir les bdds de mongoDB<br/>
 show dbs
- - Connexion a la bdd
+ - Connexion a la bdd<br/>
 use Restaurants
- - Voir la base complète
+ - Voir la base complète<br/>
 db.Restaurants.find()
- - Limiter le nombre de retour
+ - Limiter le nombre de retour<br/>
 .limit()
- - Avoir différentes informations sur la requete dont le temps d'execution
+ - Avoir différentes informations sur la requete dont le temps d'execution<br/>
 .explain()
- - Affiche le résultat bien formaté 
+ - Affiche le résultat bien formaté <br/>
 .pretty()
 
 ### Comparatif SQL/MongoDB
