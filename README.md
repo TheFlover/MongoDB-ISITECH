@@ -79,7 +79,8 @@ Sinon pour les fichiers volumineux nous pouvons également les stockers sur un s
 
 ### Fonctionnalités avancées
 
-- En quoi les fonctionnalités avancées de MongoDB peuvent-elles être un avantage ?
+Les fonctionnalités avancées de MongoDB seront un avantage car elles vont permettre d'effectuer des analyses très poussés des données sur les restaurants et clients.<br/>
+Elles permettront de faire du ciblage ainsi que des modifications dans les restaurants afin d'augmenter le nombre de clients et de développer les restaurants.<br/>
 
 ### Requêtes Géospaciales (https://docs.mongodb.com/manual/geospatial-queries/) :
 
