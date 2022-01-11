@@ -34,6 +34,12 @@ En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId(
 
 - Quel domaine se spécialise dans la gestion d'énormes quantités de données ? MongoDB fait-il parti des SGBDs adaptés ? Citez une alternative et présentez la brièvement.
 
+Enormément de domaines se sont spécialisés dans la gestion d'énormes quantitées de données (BigData) tel que la recherche scientifique, la politique, la communication, la médecine, la météorologie, l'écologie, la finance, le commerce, etc. (https://www.futura-sciences.com/tech/definitions/informatique-big-data-15028/)<br/>
+Les données sont des richesses qui servent dans tout les domaines et surtout en marqueting pour le ciblage des clients potentiels. <br/>
+Oui MongoDB fait parti des SGBD adaptés car il implémente un système de stockage considéré comme plus performant que le SQL pour l'analyse de données en masse. Ce qui le rend très intéréssant pour l'utilisation principale des BigData qui correspond à l'analyse des données.<br/>
+Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. <br/>
+Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également de s'occuper d'une quantité de taches virtuellement illimité. (https://www.lebigdata.fr/hadoop)
+
 # Projet
 
 ## Notes :
