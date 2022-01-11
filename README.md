@@ -41,18 +41,29 @@ Nous avons utilisé certaines commandes afin de nous connecter a la base et de l
 
 Voici une liste des commandes de base que nous avons utilisé :<br/>
 
- - Voir les bdds de mongoDB<br/>
-show dbs
- - Connexion a la bdd<br/>
-use Restaurants
- - Voir la base complète<br/>
-db.Restaurants.find()
- - Limiter le nombre de retour<br/>
-.limit()
- - Avoir différentes informations sur la requete dont le temps d'execution<br/>
-.explain()
- - Affiche le résultat bien formaté <br/>
-.pretty()
+- Voir les bdds de mongoDB<br/>
+show dbs<br/>
+- Connexion a la bdd<br/>
+use Restaurants<br/>
+- Voir la base complète ou une partie<br/>
+db.Restaurants.find({ condition })<br/>
+- Limiter le nombre de retour<br/>
+.limit()<br/>
+- Avoir différentes informations sur la requete dont le temps d'execution<br/>
+.explain()<br/>
+- Affiche le résultat bien formaté <br/>
+.pretty()<br/>
+- Créer une collection<br/>
+db.createCollection(Name,Options)<br/>
+- Inserer un/des enregistrements<br/>
+.insertOne({document})<br/>
+.insertMany([{document1},{document2},{ document3}….{ documentn}])<br/>
+- Modifier un enregistrement<br/>
+.update()<br/>
+- Supprimer un enregistrement<br/>
+.deleteOne()<br/>
+
+Il existe énormemen d'autres commandes que nous avons pu utiliser ainsi que des variantes tel que le .deleteMany() pour supprimer plusieurs enregistrement. Le site https://geekflare.com/fr/mongodb-queries-examples/ répertorie les commandes essentiels
 
 ### Comparatif SQL/MongoDB
 
@@ -71,8 +82,8 @@ MongoDB fait parti des SGBD adaptés à la gestion d'énormes quantités de donn
 Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. <br/>
 Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également permet de s'occuper d'une quantité de taches virtuellement illimité cependant nous avons décidé d'utiliser MongoDB. (https://www.lebigdata.fr/hadoop)<br/><br/>
 
-Afin d'accélérer les requetes, nous allons utiliser les index.
-concretement cela correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.
+Afin d'accélérer les requetes, nous allons utiliser les index.<br/>
+Concretement cela correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.<br/>
 Grâce à ça, au lieu de parcourir tout les documents un a un, nous pourrons alors parcourir directement le tableau contenant les téléphones des clients afin de retrouver le documents contenant toutes les informations du client. Cela fera un gain de performance énorme pour nos requetes.
 
 ![Tableau index](https://cdn.sanity.io/images/kjg6yd05/production/d6bdb08bc7645392d99b3a26a8cd0ad84efdcdc6-750x500.jpg?w=3840&fit=clip)
