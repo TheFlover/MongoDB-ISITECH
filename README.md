@@ -63,7 +63,7 @@ db.createCollection(Name,Options)<br/>
 - Supprimer un enregistrement<br/>
 .deleteOne()<br/>
 
-Il existe énormemen d'autres commandes que nous avons pu utiliser ainsi que des variantes tel que le .deleteMany() pour supprimer plusieurs enregistrement. Le site https://geekflare.com/fr/mongodb-queries-examples/ répertorie les commandes essentiels
+Il existe énormement d'autres commandes que nous avons pu utiliser ainsi que des variantes tel que le .deleteMany() pour supprimer plusieurs enregistrement. Le site https://geekflare.com/fr/mongodb-queries-examples/ répertorie les commandes essentiels.
 
 ### Comparatif SQL/MongoDB
 
@@ -120,7 +120,7 @@ Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
 
 ### Aggrégation :
 
-L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.<br/><br/>
+L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.<br/>
 
 Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.<br/>
 Nous pourons alors faire des études en ciblant précisement des restaurants.<br/>
