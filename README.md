@@ -71,13 +71,24 @@ Nous n'avons pas de conversion de données a faire car MongoDB est une base de f
 
 - Qu'est-ce que l'aggrégation ? Expliquer MongoDB Chart.
 
-## Requêtes Géospaciales :
+## Requêtes Géospaciales (https://docs.mongodb.com/manual/geospatial-queries/) :
 
 - Quelle est l'utilité de telles requetes ? Discutez de la structure des données GeoJson
 
+Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.<br/>
+La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/><br/>
+
+Structure :
+<field>: { type: <GeoJSON type> , coordinates: <coordinates> }
+
 - Illustrer avec un exemple (MongoDB Chart)
 
-- Comment ce type de données peut intervenir dans le projet ?
+A l'aide de mongoDB Chart, nous pouvons par exemplecréer différents graphiques afin d'analyser nos données et de les visualiser.
+
+- Comment ce type de données peut intervenir dans le projet ? (https://docs.mongodb.com/charts/)
+
+Dans notre projet, cela pourra permettre d'analyser les magasins les plus utilisés par les clients en fonction de leur lieu de résidence.<br/>
+Cela peut concrètement permettre voir la distance parcouru que les clients font pour venir dans les restaurants.
 
 - Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
 
@@ -89,4 +100,4 @@ Nous n'avons pas de conversion de données a faire car MongoDB est une base de f
 
 - Tenter d'expliquer les traitements effectués à l'aide d'un schéma fonctionnel
 
-- 
+- Requêtes natives :
