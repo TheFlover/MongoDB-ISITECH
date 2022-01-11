@@ -78,10 +78,10 @@ Nous n'avons pas de conversion de données a faire car MongoDB est une base de f
 Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.<br/>
 La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/><br/>
 
-Structure :
-<field>: { type: <GeoJSON type> , coordinates: <coordinates> }
+Structure :<br/>
+champ: { type: GeoJSON type , coordinates: coordonnées }
 
-- Illustrer avec un exemple (MongoDB Chart)
+- Illustrer avec un exemple (https://docs.mongodb.com/charts/)
 
 A l'aide de mongoDB Chart, nous pouvons par exemplecréer différents graphiques afin d'analyser nos données et de les visualiser.
 
