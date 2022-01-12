@@ -41,15 +41,15 @@ Nous nous sommes ensuite connecté a la base avec :<br/>
 > use Restaurants
 
 Puis nous avons créé deux collections.<br/>
-Une collection Restaurants :
-![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)
-Qui nous a renvoyé :
-![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)
+Une collection Restaurants :<br/>
+![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)<br/>
+Qui nous a renvoyé :<br/>
+![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)<br/>
 <br/>
-Et une collection Clients
-![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)
-Qui nous a renvoyé :
-![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)
+Et une collection Clients<br/>
+![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)<br/>
+Qui nous a renvoyé :<br/>
+![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)<br/>
 <br/>
 
 Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :<br/>
