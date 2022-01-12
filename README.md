@@ -41,6 +41,7 @@ Nous nous sommes ensuite connecté a la base avec :<br/>
 > use Restaurants
 
 Puis nous avons créé deux collections.<br/>
+
 Une collection Restaurants :<br/>
 ![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)<br/>
 Qui nous a renvoyé :<br/>
