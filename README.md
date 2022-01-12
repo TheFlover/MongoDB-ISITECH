@@ -142,7 +142,7 @@ Nous pourons alors faire des études en ciblant précisement des restaurants.<br
 Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.<br/>
 
 Nous allons donc utiliser des requêtes comme celle-ci : <br/>
-![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.png?raw=true)<br/>
+![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.PNG?raw=true)<br/>
 
 Cette requête nous permet donc de récupérer les noms et prénoms des clients étants allés dans le restaurant avec L'Id 1.
 
