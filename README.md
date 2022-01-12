@@ -144,7 +144,8 @@ jointure
 
 1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
  
- 
+ ![TP1](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP1.png?raw=true)
+
 2. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine pour tous les documents de la collection restaurant.
  	
 3. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine, mais exclure le champ _id pour tous les documents de la collection restaurant. 
