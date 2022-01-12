@@ -20,7 +20,7 @@ Avec ce système nous pourrons demander des informations de plus en plus ciblés
 Chaque information ajouté leur créditera des points ainsi que chacune de leurs connections (Limité à une toute les 5h pour éviter les abus).<br/>
 Ces point de fidélité permettront aux clients de recevoir des promotions. <br/><br/>
 
-## MongoDB
+## Utilisation de MongoDB dans notre projet
 
 Nous avons décidé d'utiliser MongoDB pour ce projet car il correspond parfaitement à nos besoins.<br/>
 MongoDB associe simplicité d'utilisation lors du développement, facilité de mise a l'échelle lors de l'évolution de notre application et performance pour la gestion de BigData ce qui le rend parfait pour notre projet. (voir : https://docs.mongodb.com/manual/)<br/><br/>
@@ -73,16 +73,22 @@ db.Restaurants.find({ condition })<br/>
 
 Il existe énormement d'autres commandes que nous avons pu utiliser ainsi que des variantes tel que le .deleteMany() pour supprimer plusieurs enregistrement. Le site https://geekflare.com/fr/mongodb-queries-examples/ répertorie les commandes essentiels.
 
-### Comparatif SQL/MongoDB
+### Fonctionnalités avancées
+
+Les fonctionnalités avancées de MongoDB seront un avantage car elles vont permettre d'effectuer des analyses très poussés des données sur les restaurants et clients.<br/>
+Elles permettront de faire du ciblage ainsi que des modifications dans les restaurants afin d'augmenter le nombre de clients et de développer les restaurants.<br/>
+
+#### MongoDB plutot que SQL
 
 Contrairement à SQL, MongoDB n'est pas un système relationnel. Cela veut dire que les données sont stoqués dans des documents et ne respecte pas les contraintes d'unicité des données.<br/>
 Une même donnée peut être stocké à de multiples reprises.<br/>
 Dans la Base SQL les Clé primaires et secondaires permettent de créer des liens entre les différentes tables et donc de s'assurer que les données sont uniques. (https://sql.sh/cours/create-table/primary-key)<br/>
 En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId("5197c6b453cce2ec3a743811")) mais elle ne sert pas à contruire des relations comme en SQL. Elle permet d'identifier de manière unique les données. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)<br/><br/>
 
-La gestion des données dans des documents en format BSON vas nous être très pratique car cela nous permettra d'ajouter des informations supplémentaires sur les clients sans avoir à modifier les structures de la base comme il faudrait le faire en SQL.
+La gestion des données dans des documents en format BSON vas nous être très pratique car cela nous permettra d'ajouter des informations supplémentaires sur les clients sans avoir à modifier les structures de la base comme il faudrait le faire en SQL.<br/>
+Nous pourrons donc ajouter des données supplémentaires concernant les clients en fonction de nos besoins et très facilement.
 
-### BigData
+#### BigData
 
 Enormément de domaines se sont spécialisés dans la gestion d'énormes quantitées de données (BigData) tel que la recherche scientifique, la politique, la communication, la médecine, la météorologie, l'écologie, la finance, le commerce, etc. (https://www.futura-sciences.com/tech/definitions/informatique-big-data-15028/)<br/>
 Les données sont des richesses qui servent dans tout les domaines et surtout en marqueting pour le ciblage des clients potentiels. <br/>
@@ -90,13 +96,15 @@ MongoDB fait parti des SGBD adaptés à la gestion d'énormes quantités de donn
 Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. <br/>
 Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également permet de s'occuper d'une quantité de taches virtuellement illimité cependant nous avons décidé d'utiliser MongoDB. (https://www.lebigdata.fr/hadoop)<br/><br/>
 
-Afin d'accélérer les requetes, nous allons utiliser les index.<br/>
+Cela est parfait car notre projet vise à stocker des quantitées de données énormes sur les clients a des but de statistiques.<br/>
+Nous aurons également besoin de traiter très rapidement les informations des clients lors de leurs connexion (à l'aide de leur numéro de téléphone).<br/>
+C'est pourquoi, afin d'accélérer les requetes, nous allons utiliser les l'indexage.<br/>
 Concretement cela correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.<br/>
 Grâce à ça, au lieu de parcourir tout les documents un a un, nous pourrons alors parcourir directement le tableau contenant les téléphones des clients afin de retrouver le documents contenant toutes les informations du client. Cela fera un gain de performance énorme pour nos requetes.
 
 ![Tableau index](https://cdn.sanity.io/images/kjg6yd05/production/d6bdb08bc7645392d99b3a26a8cd0ad84efdcdc6-750x500.jpg?w=3840&fit=clip)
 
-### Stockage de fichiers
+#### Stockage de fichiers dans notre projet
 
 Il existe différentes façons de stocker des documents dans une bdd mongoDB.<br/>
 Selon le type de documents, les façons de les stocker diffèrent également.<br/>
@@ -104,12 +112,9 @@ Des documents de plus de 16 MB peuvent être stocker à l'aide de GridFS. (voir 
 Pour des images très petites encodés en Base64 ou documents de moins de 16 MB, nous pouvons les stocker directement en base en enregistrant la chaine dans la BDD en utilisant le type de données BinData. (https://www.mongodb.com/developer/how-to/storing-large-objects-and-files/)<br/>
 Sinon pour les fichiers volumineux nous pouvons également les stockers sur un serveur et enregistrer leur chemin en BDD afin de pouvoir retrouver le document.<br/>
 
-### Fonctionnalités avancées
+Notre application permettra de prendre une photo des clients fidèles. C'est pourquoi nous devrons utiliser du stockage d'images à l'aide de GridFS.
 
-Les fonctionnalités avancées de MongoDB seront un avantage car elles vont permettre d'effectuer des analyses très poussés des données sur les restaurants et clients.<br/>
-Elles permettront de faire du ciblage ainsi que des modifications dans les restaurants afin d'augmenter le nombre de clients et de développer les restaurants.<br/>
-
-### Requêtes Géospaciales (https://docs.mongodb.com/manual/geospatial-queries/) :
+#### Utilisation des requêtes Géospaciales (https://docs.mongodb.com/manual/geospatial-queries/)
 
 Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.<br/>
 La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/>
@@ -126,7 +131,7 @@ Cela permet également de faire des statistiques graphiques pour faire des bilan
 
 Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
 
-### Aggrégation :
+#### Utilisation de l'aggrégation
 
 L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.<br/>
 
