@@ -12,6 +12,8 @@ Le projet dans son ensemble ne sera pas forcément terminé cette semaine,
 en revanche toutes les interactions avec la base de données doivent être documentées et 
 testées. Et toutes les questions posées devront être traitées.<br/>
 
+## Présentation
+
 ## Introduction
 
 Pour ce projet, nous avons décidé de faire une application qui sera installé dans les bornes des restaurants.<br/>
@@ -137,26 +139,12 @@ L'aggrégation est une opération qui permet de grouper les données de plusieur
 
 Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.<br/>
 Nous pourons alors faire des études en ciblant précisement des restaurants.<br/>
-Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.
+Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.<br/>
 
-- Tenter d'expliquer les traitements effectués à l'aide d'un schéma fonctionnel
+Nous allons donc utiliser des requêtes comme celle-ci : <br/>
+![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.png?raw=true)<br/>
 
-
-
-- Requêtes natives :
-
-db.Restaurants.aggregate(pipeline,{
-    "collation": {
-        "locale": "fr"
-    }
-});
-
-expression régulière filtre
-regexpal.com
-
-$gt
-
-jointure
+Cette requête nous permet donc de récupérer les noms et prénoms des clients étants allés dans le restaurant avec L'Id 1.
 
 # TP - Requêtes
 
