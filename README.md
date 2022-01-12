@@ -32,14 +32,27 @@ Nous avons du créer un utilisateur par personne pour se connecter à la BDD car
 
 ### Mise en place de MongoDB
 
-Nous avons utilisé certaines commandes afin de nous connecter a la base et de la manipuler.<br/>
+Tout d'abord, nous avons utilisé la comande :<br/>
+> show dbs
+qui nous a listé les différentes BDD.<br/><br/>
 
-Voici une liste des commandes de base que nous avons utilisé :<br/>
+Nous nous sommes ensuite connecté a la base avec :<br/>
+> use Restaurants
 
-- Voir les bdds de mongoDB<br/>
-show dbs<br/>
-- Connexion a la bdd<br/>
-use Restaurants<br/>
+Puis nous avons créé deux collections.<br/>
+Une collection Restaurants :
+![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)
+Qui nous a renvoyé :
+![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)
+<br/>
+Et une collection Clients
+![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)
+Qui nous a renvoyé :
+![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)
+<br/>
+
+Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :<br/>
+
 - Voir la base complète ou une partie<br/>
 db.Restaurants.find({ condition })<br/>
 - Limiter le nombre de retour<br/>
@@ -48,8 +61,6 @@ db.Restaurants.find({ condition })<br/>
 .explain()<br/>
 - Affiche le résultat bien formaté <br/>
 .pretty()<br/>
-- Créer une collection<br/>
-db.createCollection(Name,Options)<br/>
 - Inserer un/des enregistrements<br/>
 .insertOne({document})<br/>
 .insertMany([{document1},{document2},{ document3}….{ documentn}])<br/>
