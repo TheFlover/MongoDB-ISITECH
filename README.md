@@ -1,8 +1,3 @@
-# MongoDB-ISITECH
-
-## TP - Requêtes
-
-
 # Projet
 
 ## Sujet
@@ -137,3 +132,108 @@ db.Restaurants.aggregate(pipeline,{
         "locale": "fr"
     }
 });
+
+expression régulière filtre
+regexpal.com
+
+$gt
+
+jointure
+
+# TP - Requêtes
+
+1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
+ 
+ 
+2. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine pour tous les documents de la collection restaurant.
+ 	
+3. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine, mais exclure le champ _id pour tous les documents de la collection restaurant. 
+ 
+ 
+4. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, nom, arrondissement et code postal, mais excluez le champ _id pour tous les documents de la collection restaurant.
+ 
+ 
+5. Ecrivez une requête MongoDB pour afficher tous les restaurants qui sont dans l'arrondissement du Bronx. 
+ 
+ 
+6. Ecrivez une requête MongoDB pour afficher les 5 premiers restaurants qui se trouvent dans le quartier du Bronx. 
+ 
+ 
+7. Ecrivez une requête MongoDB pour afficher les 5 restaurants suivants après avoir sauté les 5 premiers qui sont dans le quartier du Bronx.
+ 
+ 
+8. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 90. 
+ 
+ 
+9. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 80 mais inférieur à 100. 
+  
+
+10. Ecrivez une requête MongoDB pour trouver les restaurants qui se situent dans une latitude inférieure à -95,754168.
+  
+
+11. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine et dont la note est supérieure à 70 et la latitude inférieure à -65.754168
+  
+
+12. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine, qui ont obtenu une note supérieure à 70 et qui sont situés à une longitude inférieure à -65.754168.
+Note : Faites cette requête sans utiliser l'opérateur $and. 
+ 
+ 
+13. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine 'américaine' et ont obtenu une note 'A' et qui n'appartiennent pas à l'arrondissement de Brooklyn. Le document doit être affiché en fonction de la cuisine par ordre décroissant. 
+ 
+ 
+14. Écrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'arrondissement et la cuisine pour les restaurants qui contiennent 'Wil' dans les trois premières lettres de leur nom. 
+  
+
+15. Écrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants dont le nom contient trois lettres 'ces'. 
+ 
+ 
+16. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui contiennent "Reg" comme trois lettres dans leur nom.
+ 
+ 
+17. Ecrivez une requête MongoDB pour trouver les restaurants qui appartiennent à l'arrondissement du Bronx et qui préparent des plats américains ou chinois.
+  
+
+18. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui appartiennent à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
+ 
+ 
+19. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui n'appartiennent pas à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
+ 
+ 
+20. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui ont obtenu un score inférieur à 10.
+ 
+ 
+21. Ecrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants qui ont préparé des plats autres que "américains" et "chinois" ou dont le nom commence par la lettre "Wil". 
+ 
+ 
+22. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants qui ont obtenu la note "A" et un score de 11 sur la date : ISODate "2014-08-11T00:00:00Z" parmi de nombreuses dates d'enquête... 
+  
+ 
+23. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants dont le 2ème élément du tableau des notes contient la note "A" et le score 9 à la date ISOD "2014-08-11T00:00:00Z". 
+ 
+ 
+24. Ecrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'adresse et l'emplacement géographique des restaurants pour lesquels le deuxième élément du tableau coord contient une valeur supérieure à 42 et inférieure à 52... 
+ 
+ 
+25. Ecrivez une requête MongoDB pour classer le nom des restaurants dans l'ordre croissant avec toutes les colonnes.
+ 
+ 
+26. Ecrivez une requête MongoDB pour classer le nom des restaurants en ordre décroissant avec toutes les colonnes. 
+ 
+ 
+27. Ecrivez une requête MongoDB pour classer le nom de la cuisine par ordre croissant et pour cette même cuisine, l'arrondissement doit être classé par ordre décroissant. 
+ 
+28. Ecrivez une requête MongoDB pour savoir si toutes les adresses contiennent la rue ou pas.
+
+ 
+29. Ecrivez une requête MongoDB qui sélectionnera tous les documents de la collection restaurants où la valeur du champ coord est Double. 
+ 
+
+30. Ecrivez une requête MongoDB qui sélectionnera l'Id, le nom et les notes des restaurants qui renvoient 0 comme reste après avoir divisé le score par 7. 
+  
+
+31. Écrivez une requête MongoDB pour trouver le nom du restaurant, l'arrondissement, la longitude, l'attitude et la cuisine pour les restaurants dont le nom contient trois lettres 'mon'. 
+ 
+ 
+32. Écrivez une requête MongoDB pour trouver le nom du restaurant, le quartier, la longitude, la latitude et la cuisine des restaurants dont le nom contient trois lettres "Mad". 
+ 
+ 
