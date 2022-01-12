@@ -34,6 +34,7 @@ Nous avons du créer un utilisateur par personne pour se connecter à la BDD car
 
 Tout d'abord, nous avons utilisé la comande :<br/>
 > show dbs
+
 qui nous a listé les différentes BDD.<br/><br/>
 
 Nous nous sommes ensuite connecté a la base avec :<br/>
