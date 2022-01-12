@@ -142,99 +142,133 @@ jointure
 
 # TP - Requêtes
 
+
 1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
  
- ![TP1](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP1.png?raw=true)
+![TP1](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP1.png?raw=true)
 
 2. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine pour tous les documents de la collection restaurant.
  	
+![TP2](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP2.png?raw=true)
+
 3. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine, mais exclure le champ _id pour tous les documents de la collection restaurant. 
  
+![TP3](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP3.png?raw=true)
  
 4. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, nom, arrondissement et code postal, mais excluez le champ _id pour tous les documents de la collection restaurant.
  
+![TP4](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP4.png?raw=true)
  
 5. Ecrivez une requête MongoDB pour afficher tous les restaurants qui sont dans l'arrondissement du Bronx. 
  
+![TP5](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP5.png?raw=true)
  
 6. Ecrivez une requête MongoDB pour afficher les 5 premiers restaurants qui se trouvent dans le quartier du Bronx. 
  
+![TP6](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP6.png?raw=true)
  
 7. Ecrivez une requête MongoDB pour afficher les 5 restaurants suivants après avoir sauté les 5 premiers qui sont dans le quartier du Bronx.
  
+![TP7](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP7.png?raw=true)
  
 8. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 90. 
  
+![TP8](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP8.png?raw=true)
  
 9. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 80 mais inférieur à 100. 
-  
+ 
+![TP9](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP9.png?raw=true)
 
 10. Ecrivez une requête MongoDB pour trouver les restaurants qui se situent dans une latitude inférieure à -95,754168.
-  
+
+![TP10](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP10.png?raw=true)
 
 11. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine et dont la note est supérieure à 70 et la latitude inférieure à -65.754168
-  
+
+![TP11](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP11.png?raw=true)
 
 12. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine, qui ont obtenu une note supérieure à 70 et qui sont situés à une longitude inférieure à -65.754168.
+
 Note : Faites cette requête sans utiliser l'opérateur $and. 
  
- 
+![TP12](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP12.png?raw=true)
+
 13. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine 'américaine' et ont obtenu une note 'A' et qui n'appartiennent pas à l'arrondissement de Brooklyn. Le document doit être affiché en fonction de la cuisine par ordre décroissant. 
  
+ ![TP13](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP13.png?raw=true)
  
 14. Écrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'arrondissement et la cuisine pour les restaurants qui contiennent 'Wil' dans les trois premières lettres de leur nom. 
-  
+ 
+ ![TP14](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP14.png?raw=true)
 
 15. Écrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants dont le nom contient trois lettres 'ces'. 
  
- 
+ ![TP15](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP15.png?raw=true)
+
 16. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui contiennent "Reg" comme trois lettres dans leur nom.
  
- 
+ ![TP16](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP16.png?raw=true)
+
 17. Ecrivez une requête MongoDB pour trouver les restaurants qui appartiennent à l'arrondissement du Bronx et qui préparent des plats américains ou chinois.
   
+ ![TP17](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP17.png?raw=true)
 
 18. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui appartiennent à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
  
- 
+ ![TP18](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP18.png?raw=true)
+
 19. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui n'appartiennent pas à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
  
- 
+ ![TP19](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP19.png?raw=true)
+
 20. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui ont obtenu un score inférieur à 10.
  
- 
+ ![TP20](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP20.png?raw=true)
+
 21. Ecrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants qui ont préparé des plats autres que "américains" et "chinois" ou dont le nom commence par la lettre "Wil". 
  
- 
+ ![TP21](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP21.png?raw=true)
+
 22. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants qui ont obtenu la note "A" et un score de 11 sur la date : ISODate "2014-08-11T00:00:00Z" parmi de nombreuses dates d'enquête... 
   
- 
+ ![TP22](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP22.png?raw=true)
+
 23. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants dont le 2ème élément du tableau des notes contient la note "A" et le score 9 à la date ISOD "2014-08-11T00:00:00Z". 
  
- 
+ ![TP23](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP23.png?raw=true)
+
 24. Ecrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'adresse et l'emplacement géographique des restaurants pour lesquels le deuxième élément du tableau coord contient une valeur supérieure à 42 et inférieure à 52... 
  
- 
+ ![TP24](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP24.png?raw=true)
+
 25. Ecrivez une requête MongoDB pour classer le nom des restaurants dans l'ordre croissant avec toutes les colonnes.
  
- 
+ ![TP25](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP25.png?raw=true)
+
 26. Ecrivez une requête MongoDB pour classer le nom des restaurants en ordre décroissant avec toutes les colonnes. 
  
- 
+ ![TP26](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP26.png?raw=true)
+
 27. Ecrivez une requête MongoDB pour classer le nom de la cuisine par ordre croissant et pour cette même cuisine, l'arrondissement doit être classé par ordre décroissant. 
  
+ ![TP27](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP27.png?raw=true)
+
 28. Ecrivez une requête MongoDB pour savoir si toutes les adresses contiennent la rue ou pas.
 
  
 29. Ecrivez une requête MongoDB qui sélectionnera tous les documents de la collection restaurants où la valeur du champ coord est Double. 
  
+ ![TP29](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP29.png?raw=true)
 
 30. Ecrivez une requête MongoDB qui sélectionnera l'Id, le nom et les notes des restaurants qui renvoient 0 comme reste après avoir divisé le score par 7. 
   
+ ![TP30](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP30.png?raw=true)
 
 31. Écrivez une requête MongoDB pour trouver le nom du restaurant, l'arrondissement, la longitude, l'attitude et la cuisine pour les restaurants dont le nom contient trois lettres 'mon'. 
  
- 
+![TP31](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP31.png?raw=true)
+
 32. Écrivez une requête MongoDB pour trouver le nom du restaurant, le quartier, la longitude, la latitude et la cuisine des restaurants dont le nom contient trois lettres "Mad". 
  
- 
+![TP32](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/TP32.png?raw=true)
+
