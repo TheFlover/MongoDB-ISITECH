@@ -131,3 +131,9 @@ Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner 
 
 
 - Requêtes natives :
+
+db.Restaurants.aggregate(pipeline,{
+    "collation": {
+        "locale": "fr"
+    }
+});
