@@ -1,19 +1,17 @@
 # <u>Table des matières </u>
 **[1. Projet](#projet)**
-
   * [1.1. Sujet](#sujet)
   * [1.2. Introduction](#introduction)
   * [1.3. Technologies](#technologies)
   * [1.4. Utilisation de MongoDB dans notre projet](#utilisation-de-mongodb-dans-notre-projet)
   * [1.5. Mise en place de MongoDB](#mise-en-place-de-mongodb)
   * [1.6. Fonctionnalités avancées](#fonctionnalités-avancées)
-
       * [1.6.1. MongoDB plutot que SQL](#mongodb-plutot-que-sql)
       * [1.6.2. BigData](#bigdata)
       * [1.6.3. Stockage de fichiers dans notre projet](#stockage-de-fichiers-dans-notre-projet)
       * [1.6.4. Utilisation des requêtes Géospaciales](#utilisation-des-requêtes-géospaciales-httpsdocsmongodbcommanualgeospatial-queries)
       * [1.6.5. Utilisation de l'aggrégation](#utilisation-de-laggrégation)
-      
+
 **[2. TP - Requêtes](#tp---requêtes)**
 
 # Projet
