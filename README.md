@@ -1,3 +1,18 @@
+# Table des matières
+1. [Projet](#projet)
+    1. [Sujet](#sujet)
+    2. [Introduction](#introduction)
+    3. [Technologies](#technologies)
+    4. [Utilisation de MongoDB dans notre projet](#utilisation-de-mongodb-dans-notre-projet)
+        1. [Mise en place de MongoDB](#mise-en-place-de-mongodb)
+        2. [Fonctionnalités avancées](#fonctionnalités-avancées)
+            1. [MongoDB plutot que SQL](#mongodb-plutot-que-sql)
+            2. [BigData](#bigdata)
+            3. [Stockage de fichiers dans notre projet](#stockage-de-fichiers-dans-notre-projet)
+            4. [Utilisation des requêtes Géospaciales](#utilisation-des-requêtes-géospaciales-httpsdocsmongodbcommanualgeospatial-queries)
+            5. [Utilisation de l'aggrégation](#utilisation-de-laggrégation)
+2. [TP - Requêtes](#tp---requêtes)
+
 # Projet
 
 ## Sujet
@@ -22,11 +37,11 @@ Ces points de fidélité permettront aux clients de recevoir des promotions. <br
 
 ## Technologies
 
-<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/node.png?raw=true" alt="NodeJS" width="200"/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/node.png?raw=true" alt="NodeJS" width="100"/>
 
 Pour la partie developpement nous alors utiliser NodeJS pour la création de l'API Backend car notre groupe est familier avec cette technologie.
 
-<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/React.png?raw=true" alt="React" width="200"/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/React.png?raw=true" alt="React" width="100"/>
 
 Concernant le front, nous utiliserons Réact car tout comme pour le backend, nous sommes familier avec ce language et qu'il convient à notre volonté d'application pour des bornes.
 
@@ -53,16 +68,24 @@ Nous nous sommes ensuite connecté a la base avec :<br/>
 
 Puis nous avons créé deux collections.<br/>
 
-Une collection Restaurants :<br/>
-![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)<br/>
-Qui nous a renvoyé :<br/>
-![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)<br/>
-<br/>
-Et une collection Clients<br/>
-![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)<br/>
-Qui nous a renvoyé :<br/>
-![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)<br/>
-<br/>
+Une collection Restaurants :
+
+![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)
+
+Qui nous a renvoyé :
+
+![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)
+
+
+Et une collection Clients :
+
+![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)
+
+Qui nous a renvoyé :
+
+![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)
+
+
 
 Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :<br/>
 
