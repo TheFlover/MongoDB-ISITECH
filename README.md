@@ -298,9 +298,15 @@ Voici un exemple de requête en utilisant la méthode explain :
 Comme nous pouvons le voir, nous avons utilisé la méthode explain sur la requête que nous avons contruite précédement.
 Nous pouvons donc voir à droite dans le résultat différentes informations sur la requête que nous venons d'executer.
 
-Pour savoir le temps d'execution, nous devons utiliser explain.executionTimeMillisEstimate.
+Pour savoir toutes les statistiques d'execution au niveau de la collection, nous pouvons utiliser :
 
+> .explain("executionStats")
 
+Ce qui nous donne le résultat suivant :
+
+![projetMethodExplain](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projectMethodExplain.png?raw=true)
+
+![projetMethodExplain](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projectMethodExplain2.png?raw=true)
 
 # TP - Requêtes
 
