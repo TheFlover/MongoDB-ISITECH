@@ -22,12 +22,11 @@ Ces points de fidélité permettront aux clients de recevoir des promotions. <br
 
 ## Technologies
 
-
-![NodeJS](https://seeklogo.com/images/N/nodejs-logo-D26404F360-seeklogo.com.png)<br/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/node.png?raw=true" alt="NodeJS" width="200"/>
 
 Pour la partie developpement nous alors utiliser NodeJS pour la création de l'API Backend car notre groupe est familier avec cette technologie.
 
-![React](http://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png)<br/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/react.png?raw=true" alt="React" width="200"/>
 
 Concernant le front, nous utiliserons Réact car tout comme pour le backend, nous sommes familier avec ce language et qu'il convient à notre volonté d'application pour des bornes.
 
