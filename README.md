@@ -1,4 +1,4 @@
-# **Table des matières**
+# *Table des matières*
 1. [Projet](#projet)
     1. [Sujet](#sujet)
     2. [Introduction](#introduction)
