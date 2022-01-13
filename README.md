@@ -221,11 +221,11 @@ Pour montrer un exemple concret, nous allons effectuer une requète qui nous don
 
 Avant tout nous devons utiliser un index de type "2dsphere" sur le champs "localisation" de notre collection restaurant.
 
-<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere.png?raw=true" alt="Index2dsphere" width="500"/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere.png?raw=true" alt="Index2dsphere"/>
 
 Nous pouvons alors visualiser cet index sur atlas :
 
-<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere2.png?raw=true" alt="Index2dsphereAtlas" width="500"/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere2.png?raw=true" alt="Index2dsphereAtlas"/>
 
 Désormais, nous allons faire une requête qui vas nous retourner les restaurants se trouvants dans un rayons de 10km autour d'un opéra.
 Pour cela nous devons créer un point géométrique avec les coordonnées de l'opéra.
@@ -245,14 +245,17 @@ Nous pouvons voir que cette requête nous retourne quand à elle deux restaurant
 
 #### Utilisation de l'aggrégation
 
-L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.<br/>
+L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.
 
-Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.<br/>
-Nous pourons alors faire des études en ciblant précisement des restaurants.<br/>
-Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.<br/>
+Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.
 
-Nous allons donc utiliser des requêtes comme celle-ci : <br/>
-![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.PNG?raw=true)<br/>
+Nous pourons alors faire des études en ciblant précisement des restaurants.
+
+Cela pourra même être utilisé avec les requêtes Géospaciales pour combiner les analyses Géographiques des restaurants et les données des clients.
+
+Nous allons donc utiliser des requêtes comme celle-ci : 
+
+![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.PNG?raw=true)
 
 Cette requête nous permet donc de récupérer les noms et prénoms des clients étants allés dans le restaurant avec L'Id 1.
 
