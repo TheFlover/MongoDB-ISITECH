@@ -247,6 +247,8 @@ Nous pouvons voir que cette requête nous retourne quand à elle deux restaurant
 
 L'aggrégation est une opération qui permet de grouper les données de plusieurs documents afin de retourner un résultat.
 
+L'aggregation peut être faite avec un enchainement de plusieurs étapes. MongoDB appelle ça la pipeline d'aggregation.
+
 Dans notre projet, nous utiliserons l'aggrégation afin de regrouper toutes les données des clients par restaurants.
 
 Nous pourons alors faire des études en ciblant précisement des restaurants.
@@ -258,6 +260,16 @@ Nous allons donc utiliser des requêtes comme celle-ci :
 ![projetAggregateRequestWithResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetAggregateRequestWithResponse.PNG?raw=true)
 
 Cette requête nous permet donc de récupérer les noms et prénoms des clients étants allés dans le restaurant avec L'Id 1.
+Comme nous pouvons le voir, cette requête nous retourne donc en résultat les noms et prénoms des clients concernés.
+
+Désormais, nous allons combiner l'aggrégation avec les requêtes géospaciales.
+
+![projectCombineGeoSWithAggregation](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projectCombineGeoSWithAggregation.png?raw=true)
+
+Cette requête nous permet de récupérer la distance entre l'opéra et les restaurants grâce au paramètre 'distanceField:"distance.estimation"' dans la requête géospaciale.
+Puis dans la pipeline, nous filtrons sur les restaurants la ville de Lyon préalablement filtré dans la requête géospaciale.
+
+Nous executons alors l'aggrégation avec db.Restaurants.agrregate(pipeline) ce qui nous donne en résultat toutes les informations des restaurants de Lyon ainsi que leur distance avec l'opéra.
 
 # TP - Requêtes
 
