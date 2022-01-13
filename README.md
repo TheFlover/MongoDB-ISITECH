@@ -272,6 +272,17 @@ Puis dans la pipeline, nous filtrons sur les restaurants la ville de Lyon préal
 
 Nous executons alors l'aggrégation avec db.Restaurants.agrregate(pipeline) ce qui nous donne en résultat toutes les informations des restaurants de Lyon ainsi que leur distance avec l'opéra.
 
+
+Notre projet se centre sur les clients. Il nous faudra donc utiliser cette requête sur la collection des Clients.
+
+Pour cela, nous allons utiliser 'query : { "localisation.city" : "Lyon"}'.
+De cette façon, tout comme pour les restaurants, nous pourrons filtrer sur les clients Lyonnais.
+
+![projetClientsGeoNearResult1](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetClientsGeoNearResult1.png?raw=true)
+
+Comme nous pouvons le voir, la requête reste très similaire à la précédente mais elle nous retourne les données des clients.
+
+
 # TP - Requêtes
 
 
