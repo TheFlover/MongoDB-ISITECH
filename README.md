@@ -12,15 +12,25 @@ Le projet dans son ensemble ne sera pas forcément terminé cette semaine,
 en revanche toutes les interactions avec la base de données doivent être documentées et 
 testées. Et toutes les questions posées devront être traitées.<br/>
 
-## Présentation
-
 ## Introduction
 
 Pour ce projet, nous avons décidé de faire une application qui sera installé dans les bornes des restaurants.<br/>
 Elle permettra aux clients de se connecter grace à leur numéro de téléphone.<br/>
 Avec ce système nous pourrons demander des informations de plus en plus ciblés en fonction du nombre de venu des clients dans les restaurants.<br/>
 Chaque information ajouté leur créditera des points ainsi que chacune de leurs connections (Limité à une toute les 5h pour éviter les abus).<br/>
-Ces point de fidélité permettront aux clients de recevoir des promotions. <br/><br/>
+Ces points de fidélité permettront aux clients de recevoir des promotions. <br/><br/>
+
+## Technologies
+
+
+![NodeJS](https://seeklogo.com/images/N/nodejs-logo-D26404F360-seeklogo.com.png)<br/>
+
+Pour la partie developpement nous alors utiliser NodeJS pour la création de l'API Backend car notre groupe est familier avec cette technologie.
+
+![React](http://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png)<br/>
+
+Concernant le front, nous utiliserons Réact car tout comme pour le backend, nous sommes familier avec ce language et qu'il convient à notre volonté d'application pour des bornes.
+
 
 ## Utilisation de MongoDB dans notre projet
 
