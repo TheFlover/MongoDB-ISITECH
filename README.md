@@ -89,21 +89,36 @@ Qui nous a renvoyé :
 
 Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :<br/>
 
-- Voir la base complète ou une partie<br/>
-db.Restaurants.find({ condition })<br/>
-- Limiter le nombre de retour<br/>
-.limit()<br/>
-- Avoir différentes informations sur la requete dont le temps d'execution<br/>
-.explain()<br/>
-- Affiche le résultat bien formaté <br/>
-.pretty()<br/>
-- Inserer un/des enregistrements<br/>
-.insertOne({document})<br/>
-.insertMany([{document1},{document2},{ document3}….{ documentn}])<br/>
-- Modifier un enregistrement<br/>
-.update()<br/>
-- Supprimer un enregistrement<br/>
-.deleteOne()<br/>
+- Voir la base complète ou une partie
+
+> db.Restaurants.find({ condition })
+
+- Limiter le nombre de retour
+
+> .limit()
+
+- Avoir différentes informations sur la requete dont le temps d'execution
+
+> .explain()
+
+- Affiche le résultat bien formaté 
+
+> .pretty()
+
+- Inserer un/des enregistrements
+
+> .insertOne({document})
+
+> .insertMany([{document1},{document2},{ document3}….{ documentn}])
+
+- Modifier un enregistrement
+
+> .update()
+
+- Supprimer un enregistrement
+
+> .deleteOne()
+
 
 Il existe énormement d'autres commandes que nous avons pu utiliser ainsi que des variantes tel que le .deleteMany() pour supprimer plusieurs enregistrement. Le site https://geekflare.com/fr/mongodb-queries-examples/ répertorie les commandes essentiels.
 
