@@ -48,13 +48,20 @@ Concernant le front, nous utiliserons Réact car tout comme pour le backend, nou
 
 ## Utilisation de MongoDB dans notre projet
 
-Nous avons décidé d'utiliser MongoDB pour ce projet car il correspond parfaitement à nos besoins.<br/>
-MongoDB associe simplicité d'utilisation lors du développement, facilité de mise a l'échelle lors de l'évolution de notre application et performance pour la gestion de BigData ce qui le rend parfait pour notre projet. (voir : https://docs.mongodb.com/manual/)<br/><br/>
+MongoDB est un SGBD non relationnel orienté document.
 
-Nous avons décidé d'utiliser Atlas pour stocker la bdd et Compass pour gérer la base car nous sommes tout les trois sur Windows et que nous l'avons déjà utilisé.<br/>
-<br/>
-Pour la sécurité, nous avons mis en place une whitelist avec nos IPs pour sécuriser la connection à la base.<br/>
-Nous avons du créer un utilisateur par personne pour se connecter à la BDD car nous ne pouvions pas nous connecter a plusieurs en simultané avec le même user.<br/>
+Nous avons décidé de l'utiliser pour ce projet car il correspond parfaitement à nos besoins.
+
+MongoDB associe simplicité d'utilisation lors du développement, facilité de mise a l'échelle lors de l'évolution de notre application et performance pour la gestion de BigData ce qui le rend parfait pour notre projet. (voir : https://docs.mongodb.com/manual/)
+
+
+Nous avons décidé d'utiliser Atlas pour stocker la bdd et Compass pour gérer la base car nous sommes tout les trois sur Windows et que nous l'avons déjà utilisé.
+
+
+
+Pour la sécurité, nous avons mis en place une whitelist avec nos IPs pour sécuriser la connection à la base.
+
+Nous avons du créer un utilisateur par personne pour se connecter à la BDD car nous ne pouvions pas nous connecter a plusieurs en simultané avec le même user.
 
 ### Mise en place de MongoDB
 
@@ -66,28 +73,31 @@ qui nous a listé les différentes BDD.<br/>
 Nous nous sommes ensuite connecté a la base avec :<br/>
 > use Restaurants
 
-Puis nous avons créé deux collections.<br/>
+Puis nous avons créé deux collections, une Restaurants et une Clients.
 
-Une collection Restaurants :
+
+Creation d'une collection Restaurants :
 
 ![projetCreateCollectionRestaurant](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurant.png?raw=true)
 
-Qui nous a renvoyé :
+Voici ensuite le retour de mongoDB une fois les données des restaurants insérés :
 
 ![CreateCollectionRestaurantResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionRestaurantResponse.png?raw=true)
 
 
-Et une collection Clients :
+Nous avons donc également créé une collection Clients :
 
 ![projetCreateCollectionClient](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClient.png?raw=true)
 
-Qui nous a renvoyé :
+Cette commande permet d'inserer plusieurs clients dans la collection Clients et créé la collection si elle n'existe pas.
+
+Cela nous a retourné :
 
 ![projetCreateCollectionClientResponse](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateCollectionClientResponse.png?raw=true)
 
 
+Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :
 
-Nous avons par la suite manipulé la base de donnée avec les commandes suivantes pour nous familiariser avec MongoDB :<br/>
 
 - Voir la base complète ou une partie
 
@@ -124,61 +134,114 @@ Il existe énormement d'autres commandes que nous avons pu utiliser ainsi que de
 
 ### Fonctionnalités avancées
 
-Les fonctionnalités avancées de MongoDB seront un avantage car elles vont permettre d'effectuer des analyses très poussés des données sur les restaurants et clients.<br/>
-Elles permettront de faire du ciblage ainsi que des modifications dans les restaurants afin d'augmenter le nombre de clients et de développer les restaurants.<br/>
+Les fonctionnalités avancées de MongoDB seront un avantage car elles vont permettre d'effectuer des analyses très poussés des données sur les restaurants et clients.
+
+Elles permettront de faire du ciblage ainsi que des modifications dans les restaurants afin d'augmenter le nombre de clients et de développer les restaurants.
 
 #### MongoDB plutot que SQL
 
-Contrairement à SQL, MongoDB n'est pas un système relationnel. Cela veut dire que les données sont stoqués dans des documents et ne respecte pas les contraintes d'unicité des données.<br/>
-Une même donnée peut être stocké à de multiples reprises.<br/>
-Dans la Base SQL les Clé primaires et secondaires permettent de créer des liens entre les différentes tables et donc de s'assurer que les données sont uniques. (https://sql.sh/cours/create-table/primary-key)<br/>
-En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId("5197c6b453cce2ec3a743811")) mais elle ne sert pas à contruire des relations comme en SQL. Elle permet d'identifier de manière unique les données. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)<br/><br/>
+Contrairement à SQL, MongoDB n'est pas un système relationnel. Cela veut dire que les données sont stoqués dans des documents et ne respecte pas les contraintes d'unicité des données.
 
-La gestion des données dans des documents en format BSON vas nous être très pratique car cela nous permettra d'ajouter des informations supplémentaires sur les clients sans avoir à modifier les structures de la base comme il faudrait le faire en SQL.<br/>
-Nous pourrons donc ajouter des données supplémentaires concernant les clients en fonction de nos besoins et très facilement.
+Une même donnée peut être stocké à de multiples reprises.
+
+Dans la Base SQL les Clé primaires et secondaires permettent de créer des liens entre les différentes tables et donc de s'assurer que les données sont uniques. (https://sql.sh/cours/create-table/primary-key)
+
+En MongoDB, les données possèdes également une clé unique ("_id" : ObjectId("5197c6b453cce2ec3a743811")) mais elle ne sert pas à contruire des relations comme en SQL. Elle permet d'identifier de manière unique les données. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)
+
+
+La gestion des données dans des documents en format BSON vas nous être très pratique car cela nous permettra d'ajouter des informations supplémentaires sur les clients sans avoir à modifier les structures de la base comme il faudrait le faire en SQL.
+
+Nous pourrons donc ajouter des données supplémentaires concernant les clients en fonction de nos besoins très facilement.
 
 #### BigData
 
-Enormément de domaines se sont spécialisés dans la gestion d'énormes quantitées de données (BigData) tel que la recherche scientifique, la politique, la communication, la médecine, la météorologie, l'écologie, la finance, le commerce, etc. (https://www.futura-sciences.com/tech/definitions/informatique-big-data-15028/)<br/>
-Les données sont des richesses qui servent dans tout les domaines et surtout en marqueting pour le ciblage des clients potentiels. <br/>
-MongoDB fait parti des SGBD adaptés à la gestion d'énormes quantités de données car il implémente un système de stockage considéré comme plus performant que le SQL pour l'analyse de données en masse. Ce qui le rend très intéréssant pour l'utilisation principale des BigData qui correspond à l'analyse des données.<br/>
-Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. <br/>
-Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également permet de s'occuper d'une quantité de taches virtuellement illimité cependant nous avons décidé d'utiliser MongoDB. (https://www.lebigdata.fr/hadoop)<br/><br/>
+Enormément de domaines se sont spécialisés dans la gestion d'énormes quantitées de données (BigData) tel que la recherche scientifique, la politique, la communication, la médecine, la météorologie, l'écologie, la finance, le commerce, etc. (https://www.futura-sciences.com/tech/definitions/informatique-big-data-15028/)
 
-Cela est parfait car notre projet vise à stocker des quantitées de données énormes sur les clients a des but de statistiques.<br/>
-Nous aurons également besoin de traiter très rapidement les informations des clients lors de leurs connexion (à l'aide de leur numéro de téléphone).<br/>
-C'est pourquoi, afin d'accélérer les requetes, nous allons utiliser les l'indexage.<br/>
-Concretement cela correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.<br/>
+Les données sont des richesses qui servent dans tout les domaines et surtout en marqueting pour le ciblage des clients potentiels. 
+
+MongoDB fait parti des SGBD adaptés à la gestion d'énormes quantités de données car il implémente un système de stockage considéré comme plus performant que le SQL pour l'analyse de données en masse. Ce qui le rend très intéréssant pour l'utilisation principale des BigData qui correspond à l'analyse des données.
+
+Une alternative qui est beaucoup revenu lors de mes recherches est Hadoop. 
+
+Hadoop est une solution opensource faisant parti du projet Apache. Il offre un espace de stockage massif prenant en charge tous les types de données. Il possède une immense puissance de traitement et également permet de s'occuper d'une quantité de taches virtuellement illimité cependant nous avons décidé d'utiliser MongoDB. (https://www.lebigdata.fr/hadoop)
+
+
+Cela est parfait car notre projet vise à stocker des quantitées de données énormes sur les clients a des but de statistiques.
+
+Nous aurons également besoin de traiter très rapidement les informations des clients lors de leurs connexion (à l'aide de leur numéro de téléphone).
+
+C'est pourquoi, afin d'accélérer les requetes, nous allons utiliser les l'indexage. Et utiliser la commande .explain() afin d'améliorer la vitesse d'execution de nos requêtes.
+
+Concretement l'indexage correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.
+
 Grâce à ça, au lieu de parcourir tout les documents un a un, nous pourrons alors parcourir directement le tableau contenant les téléphones des clients afin de retrouver le documents contenant toutes les informations du client. Cela fera un gain de performance énorme pour nos requetes.
 
 <img src="https://cdn.sanity.io/images/kjg6yd05/production/d6bdb08bc7645392d99b3a26a8cd0ad84efdcdc6-750x500.jpg?w=3840&fit=clip" alt="Tableau index" width="550"/>
 
 #### Stockage de fichiers dans notre projet
 
-Il existe différentes façons de stocker des documents dans une bdd mongoDB.<br/>
-Selon le type de documents, les façons de les stocker diffèrent également.<br/>
-Des documents de plus de 16 MB peuvent être stocker à l'aide de GridFS. (voir doc : https://docs.mongodb.com/manual/core/gridfs/)<br/>
-Pour des images très petites encodés en Base64 ou documents de moins de 16 MB, nous pouvons les stocker directement en base en enregistrant la chaine dans la BDD en utilisant le type de données BinData. (https://www.mongodb.com/developer/how-to/storing-large-objects-and-files/)<br/>
-Sinon pour les fichiers volumineux nous pouvons également les stockers sur un serveur et enregistrer leur chemin en BDD afin de pouvoir retrouver le document.<br/>
+Il existe différentes façons de stocker des documents dans une bdd mongoDB.
 
-Notre application permettra de prendre une photo des clients fidèles. C'est pourquoi nous devrons utiliser du stockage d'images à l'aide de GridFS.
+Selon le type de documents, les façons de les stocker diffèrent également.
+
+Des documents de plus de 16 MB peuvent être stocker à l'aide de GridFS. (voir doc : https://docs.mongodb.com/manual/core/gridfs/)
+Concrètement gridFS permet de stocker les données d'un fichier volumineux dans plusieurs documents MongoDB.
+
+Pour des images très petites encodés en Base64 ou documents de moins de 16 MB, nous pouvons les stocker directement en base en enregistrant la chaine dans la BDD en utilisant le type de données BinData. (https://www.mongodb.com/developer/how-to/storing-large-objects-and-files/)
+
+Sinon pour les fichiers volumineux nous pouvons également les stockers sur un serveur et enregistrer leur chemin en BDD afin de pouvoir retrouver le document.
+
+Notre application permettra de prendre une photo des clients fidèles. C'est pourquoi nous devrons utiliser du stockage d'images à l'aide de GridFS par la suite.
 
 #### Utilisation des requêtes Géospaciales (https://docs.mongodb.com/manual/geospatial-queries/)
 
-Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.<br/>
-La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.<br/>
+Les requêtes Géospaciales permettent de faire des analyses sur la locatisation géographique.
 
-Structure :<br/>
-champ: { type: GeoJSON type , coordinates: coordonnées }<br/><br/>
+La structure des données GeoJson est très simple et permet de stocker très facilement des point Géographiques ou autres types de données.
 
-A l'aide de mongoDB Chart, nous pouvons par exemple créer différents graphiques afin d'analyser nos données et de les visualiser.<br/>
-Cela permet par la suite de faire différentes études par zone géographique par exemple. (https://docs.mongodb.com/charts/)<br/><br/>
+
+Structure :
+
+> champ: { type: GeoJSON type , coordinates: coordonnées }
+
+
+A l'aide de mongoDB Chart, nous pouvons par exemple créer différents graphiques afin d'analyser nos données et de les visualiser.
+
+Cela permet par la suite de faire différentes études par zone géographique par exemple. (https://docs.mongodb.com/charts/)
+
+Nous pourons également utiliser les requetes Géospaciales afin d'étudier des intersections de surfaces.
+
+Les requêtes Géospaciales peuvent être très poussées et permettent de faire une infinité de choses en utilisant des données Géographique.
 
 Cela va nous servir à savoir si un restaurant est manquant dans une zone géographique pour par la suite cibler les endroit où il faudrait ouvrir des restaurants.
 Nous pourrons également utiliser ces données afin de comparer les restaurants et comprendre pourquoi dans une même zone géographique un restaurant à beaucoup de clients par rapport aux autres.
 Cela permet également de faire des statistiques graphiques pour faire des bilans annuels et ainsi visualiser le développement de la société dans le temps.
 
-Exemple de requêtes Geospaciales pour illustrer (Avec screenshots)
+Pour montrer un exemple concret, nous allons effectuer une requète qui nous donnera tout les restaurants se situants dans une surface sphérique donné.
+
+Avant tout nous devons utiliser un index de type "2dsphere" sur le champs "localisation" de notre collection restaurant.
+
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere.png?raw=true" alt="Index2dsphere" width="500"/>
+
+Nous pouvons alors visualiser cet index sur atlas :
+
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetCreateIndex2dsphere2.png?raw=true" alt="Index2dsphereAtlas" width="500"/>
+
+Désormais, nous allons faire une requête qui vas nous retourner les restaurants se trouvants dans un rayons de 10km autour d'un opéra.
+Pour cela nous devons créer un point géométrique avec les coordonnées de l'opéra.
+
+Puis nous recherchons avec un .find() les restaurants qui se trouvent dans la sphère de centre "opera" et de rayon 10000m.
+Nous voulons alors que cette requête nous retourne l'id du restaurant et son nom.
+
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetNearSphereResult1.png?raw=true" alt="requeteSphere1"/>
+
+Nous pouvons donc voir que le restaurant "Lyon Restaurant" se trouve dans cette surface.
+
+Nous allons désormais refaire cette même requête avec un rayons de 1000 km.
+
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetNearSphereResult2.png?raw=true" alt="requeteSphere2"/>
+
+Nous pouvons voir que cette requête nous retourne quand à elle deux restaurants, Le restaurant de Roanne et celui de Lyon.
 
 #### Utilisation de l'aggrégation
 
