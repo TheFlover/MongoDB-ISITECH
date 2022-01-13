@@ -136,7 +136,7 @@ C'est pourquoi, afin d'accélérer les requetes, nous allons utiliser les l'inde
 Concretement cela correspond a créer un tableau trié avec uniquement des informations voulues qui pointent vers des documents de la BDD.<br/>
 Grâce à ça, au lieu de parcourir tout les documents un a un, nous pourrons alors parcourir directement le tableau contenant les téléphones des clients afin de retrouver le documents contenant toutes les informations du client. Cela fera un gain de performance énorme pour nos requetes.
 
-![Tableau index](https://cdn.sanity.io/images/kjg6yd05/production/d6bdb08bc7645392d99b3a26a8cd0ad84efdcdc6-750x500.jpg?w=3840&fit=clip)
+<img src="https://cdn.sanity.io/images/kjg6yd05/production/d6bdb08bc7645392d99b3a26a8cd0ad84efdcdc6-750x500.jpg?w=3840&fit=clip" alt="Tableau index" width="300"/>
 
 #### Stockage de fichiers dans notre projet
 
