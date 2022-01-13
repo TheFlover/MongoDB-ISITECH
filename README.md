@@ -26,7 +26,7 @@ Ces points de fidélité permettront aux clients de recevoir des promotions. <br
 
 Pour la partie developpement nous alors utiliser NodeJS pour la création de l'API Backend car notre groupe est familier avec cette technologie.
 
-<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/react.png?raw=true" alt="React" width="200"/>
+<img src="https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/React.png?raw=true" alt="React" width="200"/>
 
 Concernant le front, nous utiliserons Réact car tout comme pour le backend, nous sommes familier avec ce language et qu'il convient à notre volonté d'application pour des bornes.
 
