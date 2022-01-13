@@ -1,4 +1,4 @@
-# *Table des matières*
+# **Table des matières**
 1. [Projet](#projet)
     1. [Sujet](#sujet)
     2. [Introduction](#introduction)
@@ -13,9 +13,9 @@
             5. [Utilisation de l'aggrégation](#utilisation-de-laggrégation)
 2. [TP - Requêtes](#tp---requêtes)
 
-# Projet
+# **Projet**
 
-## Sujet
+## **Sujet**
 
 Une chaine de restaurants souhaite récupérer des données clients afin de capitaliser
 sur un flux de personnes sans cesse grandissant 
@@ -27,7 +27,7 @@ Le projet dans son ensemble ne sera pas forcément terminé cette semaine,
 en revanche toutes les interactions avec la base de données doivent être documentées et 
 testées. Et toutes les questions posées devront être traitées.<br/>
 
-## Introduction
+## **Introduction**
 
 Pour ce projet, nous avons décidé de faire une application qui sera installé dans les bornes des restaurants.<br/>
 Elle permettra aux clients de se connecter grace à leur numéro de téléphone.<br/>
