@@ -282,6 +282,25 @@ De cette façon, tout comme pour les restaurants, nous pourrons filtrer sur les 
 
 Comme nous pouvons le voir, la requête reste très similaire à la précédente mais elle nous retourne les données des clients.
 
+#### Utilisation de explain
+
+La méthode explain va nous servir à améliorer la vitesse de nos requêtes en comparant les temps d'executions.
+
+Comme nous l'avons vu, nous pouvons utiliser des tableaux d'indexage afin d'accéder plus rapidement aux résultats voulu lorsque nous aurons un grand nombre de données.
+Mais si nous l'utilisons mal, cela pourrait servir à rien.
+
+Nous devons donc faire des comparaisons de requêtes.
+
+Voici un exemple de requête en utilisant la méthode explain :
+
+![projetMethodExplain](https://github.com/TheFlover/MongoDB-ISITECH/blob/main/Images/projetMethodExplain3.PNG?raw=true)
+
+Comme nous pouvons le voir, nous avons utilisé la méthode explain sur la requête que nous avons contruite précédement.
+Nous pouvons donc voir à droite dans le résultat différentes informations sur la requête que nous venons d'executer.
+
+Pour savoir le temps d'execution, nous devons utiliser explain.executionTimeMillisEstimate.
+
+
 
 # TP - Requêtes
 
